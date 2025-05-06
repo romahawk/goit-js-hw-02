@@ -20,4 +20,3 @@ function getShippingCost(country) {
   
     return `Shipping to ${country} will cost ${price} credits`;
   }
-  

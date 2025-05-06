@@ -3,4 +3,3 @@ function checkForSpam(message) {
     return lowerCaseMessage.includes("spam") || lowerCaseMessage.includes("sale");
   }
   
-  

@@ -6,4 +6,3 @@ function formatMessage(message, maxLength) {
     }
   }
   
-  

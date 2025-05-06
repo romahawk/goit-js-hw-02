@@ -5,4 +5,3 @@ function formatMessage(message, maxLength) {
       return message.slice(0, maxLength) + "...";
     }
   }
-  

@@ -7,4 +7,3 @@ function makeTransaction(quantity, pricePerDroid, customerCredits) {
       return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
     }
   }
-  

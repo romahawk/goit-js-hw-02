@@ -1,62 +1,62 @@
 # GoIT JavaScript Homework #2
 
-Цей репозиторій містить рішення другого домашнього завдання з курсу JavaScript від GoIT. Завдання зосереджені на базовій роботі з умовами, розгалуженнями, циклами та функціями.
+This repository contains solutions to Homework #2 from the GoIT JavaScript course. The tasks focus on basic programming concepts such as conditionals, branching, loops, and functions.
 
-## 📁 Структура проекту
+## 📁 Project Structure
 
 ```
 GOIT-JS-HW-02/
 │
 ├── js/
-│   ├── task-1.js       # Замовлення дроїдів
-│   ├── task-2.js       # Форматування повідомлення
-│   ├── task-3.js       # Перевірка спаму
-│   └── task-4.js       # Доставка товару
+│   ├── task-1.js       # Droid order function
+│   ├── task-2.js       # Message formatting
+│   ├── task-3.js       # Spam detection
+│   └── task-4.js       # Shipping cost with switch
 │
-├── index.html          # HTML-сторінка для тестування завдань
-├── .prettierrc         # Конфігурація Prettier
+├── index.html          # HTML page for testing tasks
+├── .prettierrc         # Prettier config file
 ├── .gitignore
-└── README.md           # Цей файл
+└── README.md           # This file
 ```
 
-## 🚀 Як запустити
+## 🚀 How to Run
 
-### 🔗 Live:
-Перейдіть за посиланням, щоб переглянути GitHub Pages:
+### 🔗 GitHub Pages:
+Visit the live project here:
 
 [https://romahawk.github.io/goit-js-hw-02/](https://romahawk.github.io/goit-js-hw-02/)
 
-> ⚠️ Переконайтесь, що `index.html` підключає скрипти правильно через `js/`, наприклад:
+> ⚠️ Ensure that your `index.html` includes the correct paths for the scripts like this:
 > ```html
 > <script src="js/task-1.js"></script>
 > ```
 
-### 💻 Локальний запуск:
+### 💻 Run Locally:
 
-1. Склонуйте репозиторій:
+1. Clone the repository:
    ```bash
    git clone https://github.com/romahawk/goit-js-hw-02.git
    ```
 
-2. Відкрийте в браузері `index.html`:
+2. Open `index.html` in your browser:
    ```bash
-   open index.html   # або double-click
+   open index.html   # or double-click the file
    ```
 
-## 🧹 Форматування
+## 🧹 Code Formatting
 
-Код відформатований за допомогою [Prettier](https://prettier.io/).  
-У VS Code натисни `Shift + Alt + F` або використовуй автоформатування при збереженні.
+The code is formatted using [Prettier](https://prettier.io/).  
+In VS Code, press `Shift + Alt + F` or enable "Format on Save" to apply it automatically.
 
-## ✅ Завдання
+## ✅ Tasks Overview
 
-- **Task 1:** Функція замовлення дроїдів з перевіркою кредитів.
-- **Task 2:** Форматування рядка по довжині з додаванням `...`.
-- **Task 3:** Перевірка повідомлень на спам.
-- **Task 4:** Обчислення вартості доставки залежно від країни з використанням `switch`.
+- **Task 1:** Function to process droid orders and check user credits.
+- **Task 2:** Format a string by max length and append ellipsis if needed.
+- **Task 3:** Detect presence of "spam" or "sale" words in any case.
+- **Task 4:** Calculate shipping cost using a `switch` statement based on country.
 
 ---
 
-### 📬 Зв’язок
+### 📬 Contact
 
 Created by [@romahawk](https://github.com/romahawk) — feel free to contribute or open issues!

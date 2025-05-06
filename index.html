@@ -2,13 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>GoIT JS HW-02</title>
+  <title>GoIT JS Homework #2</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    button { margin: 5px; padding: 10px 15px; }
+    #output { margin-top: 20px; white-space: pre-wrap; background: #f4f4f4; padding: 10px; border-radius: 5px; }
+  </style>
 </head>
 <body>
   <h1>GoIT JS Homework #2</h1>
+
+  <button onclick="runTask1()">Run Task 1</button>
+  <button onclick="runTask2()">Run Task 2</button>
+  <button onclick="runTask3()">Run Task 3</button>
+  <button onclick="runTask4()">Run Task 4</button>
+
+  <div id="output">Result will appear here...</div>
+
   <script src="js/task-1.js"></script>
   <script src="js/task-2.js"></script>
   <script src="js/task-3.js"></script>
-  <script src="js/task-4.js"></script>  
+  <script src="js/task-4.js"></script>
+
+  <script>
+    const output = document.getElementById("output");
+
+    function runTask1() {
+      const result = [
+        makeTransaction(5, 3000, 23000),
+        makeTransaction(3, 1000, 15000),
+        makeTransaction(10, 5000, 8000),
+        makeTransaction(8, 2000, 10000),
+        makeTransaction(10, 500, 5000)
+      ];
+      output.textContent = result.join("\\n");
+    }
+
+    function runTask2() {
+      const result = [
+        formatMessage("Curabitur ligula sapien", 16),
+        formatMessage("Curabitur ligula sapien", 23),
+        formatMessage("Vestibulum facilisis purus nec", 20),
+        formatMessage("Vestibulum facilisis purus nec", 30),
+        formatMessage("Nunc sed turpis a felis in nunc fringilla", 15),
+        formatMessage("Nunc sed turpis a felis in nunc fringilla", 41)
+      ];
+      output.textContent = result.join("\\n");
+    }
+
+    function runTask3() {
+      const result = [
+        checkForSpam("Latest technology news"),
+        checkForSpam("JavaScript weekly newsletter"),
+        checkForSpam("Get best sale offers now!"),
+        checkForSpam("Amazing SalE, only tonight!"),
+        checkForSpam("Trust me, this is not a spam message"),
+        checkForSpam("Get rid of sPaM emails. Our book in on sale!"),
+        checkForSpam("[SPAM] How to earn fast money?")
+      ];
+      output.textContent = result.join("\\n");
+    }
+
+    function runTask4() {
+      const result = [
+        getShippingCost("Australia"),
+        getShippingCost("Germany"),
+        getShippingCost("China"),
+        getShippingCost("Chile"),
+        getShippingCost("Jamaica"),
+        getShippingCost("Sweden")
+      ];
+      output.textContent = result.join("\\n");
+    }
+  </script>
 </body>
 </html>
